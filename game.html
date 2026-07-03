@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive - BMI Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">MyPortfolio</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="game.html" class="active">Interactive</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Interactive BMI Calculator</h1>
+            <p>Calculate your Body Mass Index instantly</p>
+        </section>
+
+        <section class="game-section">
+            <div class="bmi-container">
+                <div class="bmi-card">
+                    <h2>BMI Calculator</h2>
+                    <p class="bmi-desc">
+                        Enter your weight and height to calculate your Body Mass Index (BMI)
+                        and find out your health category.
+                    </p>
+
+                    <div class="bmi-input-group">
+                        <label for="weight">Weight (kg)</label>
+                        <input type="number" id="weight" placeholder="e.g. 65" min="1" max="500">
+                    </div>
+
+                    <div class="bmi-input-group">
+                        <label for="height">Height (cm)</label>
+                        <input type="number" id="height" placeholder="e.g. 170" min="1" max="300">
+                    </div>
+
+                    <button id="calculate-bmi" class="btn btn-primary btn-calculate">Calculate BMI</button>
+                    <button id="reset-bmi" class="btn btn-secondary btn-calculate">Reset</button>
+
+                    <div id="bmi-result" class="bmi-result">
+                        <div id="bmi-value" class="bmi-value">--</div>
+                        <div id="bmi-category" class="bmi-category">Enter your details above</div>
+                    </div>
+
+                    <div class="bmi-scale">
+                        <div class="scale-item underweight">
+                            <span>Underweight<br>&lt; 18.5</span>
+                        </div>
+                        <div class="scale-item normal">
+                            <span>Normal<br>18.5 - 24.9</span>
+                        </div>
+                        <div class="scale-item overweight">
+                            <span>Overweight<br>25 - 29.9</span>
+                        </div>
+                        <div class="scale-item obese">
+                            <span>Obese<br>30+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Khafid. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

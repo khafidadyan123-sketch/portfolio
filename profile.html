@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">MyPortfolio</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html" class="active">Profile</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="game.html">Interactive</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>My Profile</h1>
+            <p>Professional resume and background</p>
+        </section>
+
+        <section class="profile-section">
+            <div class="profile-card">
+                <div class="profile-card-image">
+                    <img src="images/placeholder.jpg" alt="Profile Photo" onerror="this.style.display='none'; document.getElementById('profile-fallback').style.display='flex';">
+                    <div id="profile-fallback" class="avatar-fallback" style="display:none;">
+                        <span>K</span>
+                    </div>
+                </div>
+                <h2>Khafid</h2>
+                <p class="profile-title">Aspiring Web Developer</p>
+                <p class="profile-desc">
+                    Dedicated and detail-oriented IT student with a passion for web development.
+                    Seeking opportunities to apply my skills in building modern, responsive websites.
+                </p>
+            </div>
+
+            <div class="resume-table-wrapper">
+                <h2>Resume</h2>
+                <table class="resume-table">
+                    <tr>
+                        <th colspan="2">Career Objective</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            To obtain a challenging position as a Web Developer where I can utilize my
+                            technical skills in HTML, CSS, JavaScript, and modern frameworks to build
+                            impactful web applications and grow as a professional in the IT industry.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Educational Background</th>
+                    </tr>
+                    <tr>
+                        <td class="label">2024 - Present</td>
+                        <td>DIPLOMA IN ELECTRONIC ENGINEERING (INTERNET OF THINGS)<br>KKTM Petaling Jaya</td>
+                    </tr>
+                    <tr>
+                        <td class="label">2022 - 2023</td>
+                        <td>Sijil Pelajaran Malaysia (SPM)<br>Sekolah Menengah Kebangsaan</td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Skills</th>
+                    </tr>
+                    <tr>
+                        <td class="label">Web Development</td>
+                        <td>HTML5, CSS3, JavaScript, Responsive Design</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Programming</td>
+                        <td>Python, Java, C++</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Tools</td>
+                        <td>VS Code, Git, Figma, Adobe Photoshop</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Soft Skills</td>
+                        <td>Problem Solving, Teamwork, Communication, Time Management</td>
+                    </tr>
+
+
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Khafid. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

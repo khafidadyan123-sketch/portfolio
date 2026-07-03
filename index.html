@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">MyPortfolio</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="game.html">Interactive</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hello, I'm <span class="highlight">Khafid</span></h1>
+                    <p class="subtitle">Aspiring Web Developer &amp; IT Professional</p>
+                    <p class="intro">
+                        Welcome to my personal portfolio website. I am passionate about building
+                        responsive, user-friendly websites and applications. With a strong foundation
+                        in web technologies, I strive to create digital experiences that make a difference.
+                    </p>
+                    <p class="ambition">
+                        <strong>Career Ambition:</strong> To become a Full-Stack Web Developer
+                        and contribute to innovative tech solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="profile.html" class="btn btn-primary">View My Profile</a>
+                        <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-placeholder">
+                        <img src="images/placeholder.jpg" alt="Profile Photo" onerror="this.style.display='none'; document.getElementById('fallback-avatar').style.display='flex';">
+                        <div id="fallback-avatar" class="avatar-fzallback" style="display:none;">
+                            <span>K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Khafid. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
